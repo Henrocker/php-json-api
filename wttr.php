@@ -27,18 +27,18 @@
 			$loc = "unknown";
 		}
 		if (empty($temp)) {
-			$temp = 0.0;
+			$temp = 0;
 		}
 		if (empty($pres)) {
-			$pres = 0000;
+			$pres = 0;
 		}
 		if (empty($humi)) {
-			$humi = 00;
+			$humi = 0;
 		}
 		if (empty($io)) {
 			$io = 0;
 		}
-		$mysqli = new mysqli("<ENDPOINT>", "<USER>", "<PASSWORD>", "<DB>");
+		$mysqli = new mysqli("<ENDPOINT>", "<USER>", "<PASSWORT>", "<DB>");
 		if ($mysqli->connect_errno) {
 			die("Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error);
 		}
